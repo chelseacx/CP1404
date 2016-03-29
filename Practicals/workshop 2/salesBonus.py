@@ -3,9 +3,12 @@
 
 sales = float(input("Enter sales: $"))
 
-if sales < 1000:
-    bonus = sales * 0.1
-else:
-    bonus = sales * 0.15
+while sales > 0:
 
-print("Bonus is $", bonus, sep="")
+    if sales < 1000:
+        bonus = sales * 0.1
+    else:
+        bonus = sales * 0.15
+
+    print("Bonus is $", bonus, sep="")
+    sales = float(input("Enter sales: $"))
