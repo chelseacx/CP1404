@@ -16,3 +16,18 @@ except ValueError:
 except FileNotFoundError:
     print("The file is not found")
 
+
+try:
+    number = int(input("Enter sth:"))
+    print(10/number)
+
+except ValueError:
+    print("Value error")
+
+except ZeroDivisionError:
+    print("ZeroDivisionError")
+
+except:     #this catches all other errors
+    print("All the rest")
+
+print("Finish")
