@@ -1,0 +1,33 @@
+BoxLayout:
+    orientation: "vertical"
+    BoxLayout:
+        orientation: "horizontal"
+        TextInput:
+            id: input_m
+            text: "Enter your number in m here."
+            font_size: 45
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_x: 0.2
+            Button:
+                font_size: 25
+                id: up_button
+                text: "Up"
+                on_press: app.increment()
+            Button:
+                font_size: 25
+                id: down_button
+                text: "Down"
+                on_press: app.decrement()
+    Button:
+        font_size: 25
+        id: convert_button
+        text: "Convert m to km"
+        on_press: app.convert_m_to_km()
+    Label:
+        id: display_result
+        text: ""
+        color: (1, 1, 0, 1)
+        font_size: 45
+
+
