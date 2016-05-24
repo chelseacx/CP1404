@@ -13,9 +13,9 @@ def get_float_value(variable_name, measurement_unit):
 print("Body-mass-index calculator, for CP1404")
 
 weight = get_float_value("weight", "kgs")
+""" function that gets the float value"""
 height = get_float_value("height", "m")
 
 bmi = weight / (height * height)
-
 print("Therefore, your BMI value is: {:.2f}".format(bmi))
 print("Thank you!")
